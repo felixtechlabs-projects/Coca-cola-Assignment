@@ -1,0 +1,35 @@
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.grid-container {
+    height: 100%;
+    width: 100%;
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: 25% auto auto;
+    grid-template-rows: 15% auto auto auto;
+    grid-gap: 10px;
+}
+
+.grid-container div {
+    border: 1px solid black;
+}
+
+#one {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    order: 1;
+}
+
+#three {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 2;
+}
+
+#seven {
+    grid-column: 1 / span 3;
+    order: -1;
+}
